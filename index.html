@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- swiper-css -->
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- animatae-css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- tiny-slider -->
+  <link rel="stylesheet" href="lilbrary/imagehover.css-master/css/imagehover.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+ <!-- hover-animation -->
+ 
+  <title>DimiHouse</title>
+</head>
+
+<body>
+  <!-- nav-bar -->
+  <header>
+    <div class="logo animate__animated animate__infinite animate__slower	3s 	animate__bounce">
+      <img src="./img/logo.png" alt="" class="navlogo">
+    </div>
+    <ul class="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#bestMovie">BestMovies</a></li>
+      <li><a href="#movies">Movies</a></li>
+      <li><a href="#newComing">Coming Movies</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="" class="btn"><i class=" fa fa-solid fa-right-to-bracket"></i></a>
+  </header>
+  <!-- nav-bar-end -->
+  <section class="home" id="home">
+    <div class="container">
+      <img src="./img/alian.jpg" alt="">
+      <div class="homeText">
+        <h1>In the distant future, the crew of the commercial spaceship
+          <h2> Nostromo are on their way home when they pick up a distress call from a distant moon</h2>
+          <div class="btn-container">
+            <a href="#" class="btn-play"><i class=" fa fa-solid fa-play"></i>Watch Now</a>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- swiper -->
+  <section class="swiper-container" id="bestMovie">
+    <h1 class="text" style="margin: top 20px;">Best Movies</h1>
+    <div class="underline"></div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/13.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/2.webp" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/3.webp" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/4.webp" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/6.webp" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/7.webp" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/14.webp" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/15.webp" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!-- end-of-swiper -->
+  
+  <!-- Movies -->
+  <section class="movies" id="movies">
+    <h2 class="text " style="margin-top: 20px;"><i class="fa-solid fa-clapperboard" style="margin: 0 10px;"></i>All Movies</h2>
+    <div class="underline"></div>
+    <div class="btn-movies">
+      <button class="list active " data-filter="All">All</button>
+      <button class="list " data-filter="Action">Action</button>
+      <button class="list " data-filter="Comedy">Comedy</button>
+      <button class="list " data-filter="Horror">Horror</button>
+    </div>
+
+    <div class="movie-container">
+      <div class="box Action">
+        <div class="box-image">
+          <img src="./img/1.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>Sonic 2</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>128min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i>5.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Action">
+        <div class="box-image">
+          <img src="./img/2.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>Doctor Strange</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>140min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Horror">
+        <div class="box-image">
+          <img src="./img/h1.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>You Wont be Alone</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>120min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star-half"></i>4.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Action">
+        <div class="box-image">
+          <img src="./img/3.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>StarWar EPISODE 3</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>140min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Horror">
+        <div class="box-image">
+          <img src="./img/h2.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>Dying to Show you A good time</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>140min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star-half"></i>5.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Action">
+        <div class="box-image">
+          <img src="./img/12.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>Casino ROYALE</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>150min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Horror">
+        <div class="box-image">
+          <img src="./img/h7.jpg" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>Land Of The Dead</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>120min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star-half"></i>6.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Action">
+        <div class="box-image">
+          <img src="./img/14.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>ETERNALS</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>140min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>8.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Action">
+        <div class="box-image">
+          <img src="./img/15.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>CaptainAmerica The First AVENGER</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>180min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.4</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Horror">
+        <div class="box-image">
+          <img src="./img/h3.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>Resident Evil</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>180min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star-half"></i>6.8</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Action">
+        <div class="box-image">
+          <img src="./img/8.jpg" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>Spider-Man into the verse</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>160min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Action">
+        <div class="box-image">
+          <img src="./img/9.jpg" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>LORD of THE RINGS</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>160min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"><i class="fa-solid fa-star"></i></i>8.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Comedy">
+        <div class="box-image">
+          <img src="./img/10.jpg" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>DIARY OF a WimpyKid</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>120min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"><i class="fa-solid fa-star"></i></i>7.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Action Comedy">
+        <div class="box-image">
+          <img src="./img/11.jpg" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>Pirates of Caaribbean</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>150min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>8.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Action">
+        <div class="box-image">
+          <img src="./img/13.jpg" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>Peral Harbor</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>260min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Action">
+        <div class="box-image">
+          <img src="./img/16.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>Black Hawk Down</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>200min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Comedy">
+        <div class="box-image">
+          <img src="./img/18.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>Sing 2</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>140min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.1</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Comedy">
+        <div class="box-image">
+          <img src="./img/21.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>DOG</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>110min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star-half"></i>6.6</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Comedy">
+        <div class="box-image">
+          <img src="./img/19.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>LUCA</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>170min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i>6.8</span>
+          </div>
+        </div>
+      </div>
+      <div class="box Comedy">
+        <div class="box-image">
+          <img src="./img/21 copy.webp" alt="">
+        </div>
+        <div class="card-text text-white text">
+          <h3>Friday</h3>
+          <div class="para">
+            <span><i class="fa-solid fa-clock mx-2"></i>159min</span>
+            <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.5</span>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </section>
+  <!-- .coming-movies -->
+  <div class="Cbutton-container" id="newComing">
+    <h2 class="text">NewComing Movies</h2>
+    <div class="underline"></div>
+    <div id="controls" class="cButton">
+        <button class="previous Btn"><i class="fa-solid fa-arrow-left text-Gold"></i></button>
+        <button class="next  Btn"><i class="fa-solid fa-arrow-right text-Gold"></i></button>
+    </div>
+</div>
+
+<div class="NewComing-container">
+      <div class="my-slider">
+        <div class="slide-item">
+          <figure class="imghvr-slide-up">
+            <img src="./img/Nc.webp" alt="example-image">
+            <figcaption>
+             <div class="cButton">
+              <h3 class="ih-fade-down ih-delay-sm ">BATMAN</h3>
+             </div>
+              <p class="ih-zoom-in ih-delay-md">
+                <div class="para">
+                  <span><i class="fa-solid fa-clock mx-2"></i>159min</span>
+                  <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.5</span>
+                </div>
+                <br>
+                <p class="text-Gold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, nam?</p>
+              </p>
+            
+            </figcaption>
+          </figure>
+        </div>
+        <div class="slide-item"><figure class="imghvr-slide-up">
+          <img src="./img/Nc2.webp" alt="example-image">
+          <figcaption>
+           <div class="cButton">
+            <h3 class="ih-fade-down ih-delay-sm ">BATTLESHIP</h3>
+           </div>
+            <p class="ih-zoom-in ih-delay-md">
+              <div class="para">
+                <span><i class="fa-solid fa-clock mx-2"></i>139min</span>
+                <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.5</span>
+              </div>
+              <br>
+              <p class="text-Gold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, nam?</p>
+            </p>
+          
+          </figcaption>
+        </figure></div>
+        <div class="slide-item">  
+          <figure class="imghvr-slide-up">
+            <img src="./img/Nc3.jpg" alt="example-image">
+            <figcaption>
+             <div class="cButton">
+              <h3 class="ih-fade-down ih-delay-sm ">BATTLESHIP</h3>
+             </div>
+              <p class="ih-zoom-in ih-delay-md">
+                <div class="para">
+                  <span><i class="fa-solid fa-clock mx-2"></i>160min</span>
+                  <span class="text-Gold "><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>6.5</span>
+                </div>
+                <br>
+                <p class="text-Gold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, nam?</p>
+              </p>
+            
+            </figcaption>
+          </figure>
+      </div>
+        <div class="slide-item">
+          <figure class="imghvr-slide-up">
+            <img src="./img/Nc4.webp" alt="example-image">
+            <figcaption>
+             <div class="cButton">
+              <h3 class="ih-fade-down ih-delay-sm ">TURNING RED</h3>
+             </div>
+              <p class="ih-zoom-in ih-delay-md">
+                <div class="para">
+                  <span><i class="fa-solid fa-clock mx-2"></i>120min</span>
+                  <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.2</span>
+                </div>
+                <br>
+                <p class="text-Gold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, nam?</p>
+              </p>
+            
+            </figcaption>
+          </figure>
+        </div>
+        <div class="slide-item">
+          <figure class="imghvr-slide-up">
+            <img src="./img/Nc5.webp" alt="example-image">
+            <figcaption>
+             <div class="cButton">
+              <h3 class="ih-fade-down ih-delay-sm ">Car 2</h3>
+             </div>
+              <p class="ih-zoom-in ih-delay-md">
+                <div class="para">
+                  <span><i class="fa-solid fa-clock mx-2"></i>150min</span>
+                  <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.3</span>
+                </div>
+                <br>
+                <p class="text-Gold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, nam?</p>
+              </p>
+            
+            </figcaption>
+          </figure>
+        </div>
+        <div class="slide-item">
+          <figure class="imghvr-slide-up">
+            <img src="./img/Nc6.jpg" alt="example-image">
+            <figcaption>
+             <div class="cButton">
+              <h3 class="ih-fade-down ih-delay-sm ">Flag Of Our Father</h3>
+             </div>
+              <p class="ih-zoom-in ih-delay-md">
+                <div class="para">
+                  <span><i class="fa-solid fa-clock mx-2"></i>139min</span>
+                  <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>6.5</span>
+                </div>
+                <br>
+                <p class="text-Gold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, nam?</p>
+              </p>
+            
+            </figcaption>
+          </figure>
+        </div>
+        <div class="slide-item"><figure class="imghvr-slide-up">
+          <img src="./img/Nc7.jpg" alt="example-image">
+          <figcaption>
+           <div class="cButton">
+            <h3 class="ih-fade-down ih-delay-sm ">Saving Private Ryan</h3>
+           </div>
+            <p class="ih-zoom-in ih-delay-md">
+              <div class="para">
+                <span><i class="fa-solid fa-clock mx-2"></i>160min</span>
+                <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.3</span>
+              </div>
+              <br>
+              <p class="text-Gold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, nam?</p>
+            </p>
+          
+          </figcaption>
+        </figure></div>
+        <div class="slide-item"><figure class="imghvr-slide-up">
+          <img src="./img/Nc8.jpg" alt="example-image">
+          <figcaption>
+           <div class="cButton">
+            <h3 class="ih-fade-down ih-delay-sm ">Kingdom Of HEAVEN</h3>
+           </div>
+            <p class="ih-zoom-in ih-delay-md">
+              <div class="para">
+                <span><i class="fa-solid fa-clock mx-2"></i>160min</span>
+                <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>6.3</span>
+              </div>
+              <br>
+              <p class="text-Gold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, nam?</p>
+            </p>
+          
+          </figcaption>
+        </figure></div>
+        <div class="slide-item"><figure class="imghvr-slide-up">
+          <img src="./img/Nc9.webp" alt="example-image">
+          <figcaption>
+           <div class="cButton">
+            <h3 class="ih-fade-down ih-delay-sm ">Alice In Wonder Land</h3>
+           </div>
+            <p class="ih-zoom-in ih-delay-md">
+              <div class="para">
+                <span><i class="fa-solid fa-clock mx-2"></i>150min</span>
+                <span class="text-Gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>7.4</span>
+              </div>
+              <br>
+              <p class="text-Gold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, nam?</p>
+            </p>
+          
+          </figcaption>
+        </figure></div>
+      </div>
+</div>
+  <!-- contact -->
+  <section id="contact" class="contact">
+      <h2 class="text">Contact Us with Email</h2>
+      <div class="underline"></div>
+      <form action="#">
+        <input type="email" class="form-control" placeholder="Please Enter Your Email">
+      <input type="submit" name="" id="" class="input-btn text-white">
+      </form>
+  </section>
+  <!-- footer-section -->
+  <footer class="footer">
+    <h2 class="" style="text-align:center ;">Follow Us on </h2>
+
+    <div class="social-container">
+      <img src="./img/facebook.png" alt="">
+     <span>Facebook</span>
+      <img src="./img/instagram.png" alt="">
+      <span>Instagram</span>
+      <img src="./img/telegram.png" alt="">
+      <span>Telegram</span>
+      <img src="./img/linkedin.png" alt="">
+      <span>Linkedin</span>
+    </div>
+    <h5 class="" style="text-align:center ;">Copy Right by DimiHouse 2022-2023</h5>
+</footer>
+
+  <!-- button-to-top -->
+  <a href="#home"><button class="btn-up "><i class="fa-solid fa-caret-up"></i></button></a>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    },
+  });
+  $(document).ready(function () {
+    $('.list').click(function () {
+      const value = $(this).attr('data-filter');
+      if (value == 'All') {
+        $('.box').show(500);
+      } else {
+        $('.box').not('.' + value).hide(500);
+        $('.box').filter('.' + value).show(500);
+      }
+
+    });
+    $('.list').click(function () {
+      $(this).addClass('active').siblings().removeClass('active');
+    });
+  });
+
+  var slider = tns({
+        "container": ".my-slider",
+  "items": 4,
+  "nav":false,
+  "rewind": true,
+  "swipeAngle": false,
+  "speed": 400,
+     "controlsContainer": '#controls',
+      "prevButton": '.previous',
+      "nextButton": '.next',
+      "navContainer":'#cycle',
+      gutter:10,
+      "fixedWidth": 400,
+  
+});
+</script>
+
+
+</html>
